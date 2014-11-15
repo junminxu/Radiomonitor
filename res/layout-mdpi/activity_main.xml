@@ -1,0 +1,370 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+	<!-- adapt to 102 -->
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:baselineAligned="false" >
+
+		<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+	    		android:layout_weight="1"
+	    		android:layout_marginRight="30dp" >
+	    
+		    <TextView
+		        android:id="@+id/textView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="bottom"
+		        android:text="@string/data_state"
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:textColor="@color/GRAY" />
+	
+		    <com.asus.radiomonitor.CustomEditText
+		        android:id="@+id/editDataState"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_marginLeft="10dp"
+		        android:ems="10"
+		        android:enabled="true"
+		        android:focusable="false"
+		        android:gravity="center_vertical|center_horizontal"
+		        android:hint="@string/unknown"
+		        android:textSize="16sp"
+		        android:textStyle="italic" />
+
+    	</LinearLayout>
+    
+		<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+	    		android:layout_weight="1"
+	    		android:layout_marginLeft="30dp" >
+	    
+		    <TextView
+		        android:id="@+id/textView3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="bottom"
+		        android:text="@string/network_type"
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:textColor="@color/GRAY" />
+	
+		    <com.asus.radiomonitor.CustomEditText
+		        android:id="@+id/editNetworkType"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_marginLeft="10dp"
+		        android:ems="10"
+		        android:enabled="true"
+		        android:focusable="false"
+		        android:gravity="center_vertical|center_horizontal"
+		        android:hint="@string/unknown"
+		        android:textSize="16sp"
+		        android:textStyle="italic" />
+	    
+    	</LinearLayout>
+    	
+    </LinearLayout>
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:baselineAligned="false" 
+	    android:layout_marginTop="10dp" >
+		
+		<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+	    		android:layout_weight="1"
+	    		android:layout_marginRight="30dp" >
+		    
+		    <TextView
+		        android:id="@+id/textView5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="bottom"
+		        android:text="@string/data_direction"
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:textColor="@color/GRAY" />
+	
+		    <com.asus.radiomonitor.CustomEditText
+		        android:id="@+id/editDataDirection"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_marginLeft="10dp"
+		        android:ems="10"
+		        android:enabled="true"
+		        android:focusable="false"
+		        android:gravity="center_vertical|center_horizontal"
+		        android:hint="@string/unknown"
+		        android:textSize="16sp"
+		        android:textStyle="italic" />
+		    
+    	</LinearLayout>
+    	
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+    		android:layout_weight="1"
+	    	android:layout_marginLeft="30dp" >
+		    
+		    <TextView
+		        android:id="@+id/textView4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="bottom"
+		        android:text="@string/signal_strength"
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:textColor="@color/GRAY" />
+		    
+		    <com.asus.radiomonitor.CustomEditText
+		        android:id="@+id/editSignalStrength"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_marginLeft="10dp"
+		        android:ems="10"
+		        android:enabled="true"
+		        android:focusable="false"
+		        android:gravity="center_vertical|center_horizontal"
+		        android:hint="@string/unknown"
+		        android:textSize="16sp"
+		        android:textStyle="italic" />
+
+    	</LinearLayout>
+    	
+	    
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:baselineAligned="false"
+	    android:layout_marginTop="10dp" >
+		
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+    		android:layout_weight="1"
+	    	android:layout_marginRight="30dp" >
+		    
+			<TextView
+			    android:id="@+id/textView6"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="bottom"
+			    android:text="@string/mobile_rx_bytes"
+			    android:textAppearance="?android:attr/textAppearanceMedium"
+			    android:textColor="@color/GRAY" />
+	
+			<com.asus.radiomonitor.DelimiteEditText
+			    android:id="@+id/delimiteRxBytes"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical"
+			    android:layout_marginLeft="10dp"
+			    android:ems="10"
+			    android:enabled="true"
+			    android:focusable="false"
+			    android:gravity="center_vertical|center_horizontal"
+			    android:hint="@string/numeric_zero"
+			    android:textSize="16sp"
+			    android:textStyle="italic" />
+			
+		</LinearLayout>
+		
+		<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+	    		android:layout_weight="1"
+	    		android:layout_marginLeft="30dp" >
+			
+			<TextView
+			    android:id="@+id/textView7"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="bottom"
+			    android:text="@string/mobile_tx_bytes"
+			    android:textAppearance="?android:attr/textAppearanceMedium"
+			    android:textColor="@color/GRAY" />
+	
+			<com.asus.radiomonitor.DelimiteEditText
+			    android:id="@+id/delimiteTxBytes"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical"
+			    android:layout_marginLeft="10dp"
+			    android:ems="10"
+			    android:enabled="true"
+			    android:focusable="false"
+			    android:gravity="center_vertical|center_horizontal"
+			    android:hint="@string/numeric_zero"
+			    android:textSize="16sp"
+			    android:textStyle="italic" />
+			
+	    </LinearLayout>
+	    
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="2px"
+	    android:layout_marginTop="10dp"
+	    android:background="@color/LIGHTGRAY" />
+	
+	<com.asus.radiomonitor.LogEditText
+	    android:id="@+id/editLog"
+	    android:layout_width="fill_parent"
+	    android:layout_height="200sp"
+	    android:ems="10"
+	    android:focusable="false"
+	    android:gravity="top|left"
+	    android:inputType="textMultiLine" />
+
+		
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="2px"
+	    android:layout_marginTop="5dp"
+	    android:background="@color/LIGHTGRAY" />
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:orientation="vertical" >
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:baselineAligned="false"
+	    android:layout_gravity="right"
+	    android:orientation="horizontal" >
+
+		<Button
+		    android:id="@+id/btnTest"
+		    android:layout_width="0dp"
+		    android:layout_height="0dp"
+		    android:layout_marginRight="20dp"
+		    android:text="test"
+		    android:textSize="22sp" />
+
+		<ToggleButton
+		    android:id="@+id/toggleRefresh"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:background="@drawable/custom_toggle_button"
+		    android:textOff="@string/refresh"
+		    android:textOn="@string/refresh"
+		    android:textSize="22sp" />
+		
+	    <TextView
+	        android:id="@+id/textView8"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:text="every"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+		<EditText
+		    android:id="@+id/editRefreshFrequency"
+		    android:layout_width="60dp"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical"
+		    android:layout_marginLeft="5dp"
+		    android:ems="10"
+		    android:gravity="center_vertical|center_horizontal"
+		    android:inputType="number"
+		    android:text="@string/refresh_frequency" />
+
+	    <TextView
+	        android:id="@+id/textView9"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:text="s"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+		
+		<!--LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical" >
+		</LinearLayout-->
+	    
+	</LinearLayout>
+	</LinearLayout>
+	
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_marginTop="0dp"
+	    android:baselineAligned="false"
+	    android:orientation="vertical" >
+		
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="0dp"
+		    android:baselineAligned="false"
+		    android:orientation="horizontal" >
+		    
+			<EditText
+			    android:id="@+id/editUrl"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical"
+			    android:layout_weight="1"
+			    android:ems="10"
+			    android:gravity="left"
+			    android:hint="@string/type_url"
+			    android:text="@string/default_url"
+			    android:inputType="textUri" />
+			
+			<Button
+			    android:id="@+id/btnGo"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/custom_button"
+			    android:text="@string/go"
+			    android:textSize="22sp" />
+			
+		</LinearLayout>
+			
+		<WebView
+		    android:id="@+id/webView"
+		    android:layout_width="fill_parent"
+		    android:layout_height="0dp"
+		    android:layout_marginTop="0dp"
+		    android:layout_weight="1" />
+	
+	</LinearLayout>
+
+</LinearLayout>

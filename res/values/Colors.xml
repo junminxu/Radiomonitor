@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="TRANSPARENT">#0000</color>
+    <color name="RED">#FF0000</color>
+    <color name="GREEN">#00FF00</color>
+    <color name="BLUE">#0000FF</color>
+    <color name="WHITE">#FFF</color>
+    <color name="BLACK">#000</color>
+    <color name="DARKGRAY">#2F2F2F</color>
+    <color name="GRAY">#6F6F6F</color>
+    <color name="LIGHTGRAY">#BFBFBF</color>
+    
+    <!--  color name="LIGHTBLUE">#62D0FF</color>-->
+    <color name="LIGHTBLUE">#7A9AFF</color>
+    <color name="MEDIUMBLUE">#0085BD</color>
+    <color name="DARKBLUE">#0A3E65</color>
+    
+</resources>

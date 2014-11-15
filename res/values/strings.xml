@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RadioMonitor</string>
+    <string name="app_version">0.0.1</string>
+    <string name="about">About</string>
+    
+    <string name="full_screen_log">Display log full screen</string>
+    <string name="quit_full_screen_log">Quit display log full screen</string>
+
+    <string name="connection_error">Unable to load content. Check your network connection.</string>
+    <string name="xml_error">Error parsing XML.</string>
+    
+    <string name="page_title">Newest StackOverflow questions tagged \'android\'</string>
+    <string name="updated">Last updated:</string>
+    
+    <string name="unknown">UNKNOWN</string>
+    <string name="numeric_zero">0</string>
+    <string name="data_state">Radio Data Link:</string>
+    <string name="network_type">Network Type:</string>
+    <string name="signal_strength">Signal Strength:</string>
+    <string name="data_direction">Data Direction:</string>
+    <string name="mobile_rx_bytes">Mobile Rx Bytes:</string>
+    <string name="mobile_tx_bytes">Mobile Tx Bytes:</string>
+    
+    <string name="refresh_frequency">5</string>
+    <string name="refresh">Refresh</string>
+    <string name="go">Go</string>
+    <string name="type_url">type URL here</string>
+    <string name="default_url">http://www.baidu.com</string>
+    
+    
+</resources>
